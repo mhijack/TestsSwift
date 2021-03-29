@@ -9,8 +9,11 @@ import Foundation
 
 class UserManager: NSObject {
     
-    public func addUserAsFriend() {
+    public func addUserAsFriend(isFriend: Bool, completion: @escaping (Bool) -> ()) {
+        print("we are now friends")
         
+        
+        completion(!isFriend)
     }
     
 }

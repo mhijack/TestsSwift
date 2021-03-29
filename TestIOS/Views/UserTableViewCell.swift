@@ -10,8 +10,10 @@ import Stevia
 
 final class UserTableViewCell: UITableViewCell {
     
-    var avatar: RoundImageView = RoundImageView()
+    var avatar: UIImageView = UIImageView()
     var nameLabel: UILabel = UILabel()
+    
+    var avatarTapClosure: (() -> ())?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Stevia
+import SDWebImage
 
-class UserTableViewCellConfigurator {
+class UserTableViewCellConfigurator: NSObject {
     
     private let userManager: UserManager
     
@@ -15,8 +17,14 @@ class UserTableViewCellConfigurator {
         self.userManager = userManager
     }
     
-    public func configure(cell: UserTableViewCell, forDisplaying model: User) {
-//        cell.avatar.image =
+    public func configure(cell: UserTableViewCell, forDisplaying user: UserCellViewModel) {
+        cell.avatar.sd_setImage(with: user.user.avatar, completed: nil)
+        cell.nameLabel.text = user.user.name
+        
+        cell.avatarTapClosure = { [weak self] in
+            guard let self = self else { return }
+//            self.userManager.addUserAsFriend()
+        }
     }
     
 }

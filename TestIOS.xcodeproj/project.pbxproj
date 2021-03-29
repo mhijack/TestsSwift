@@ -29,10 +29,12 @@
 		3BD5C61E2611AF2E00BC2900 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C61D2611AF2E00BC2900 /* UserTableViewCell.swift */; };
 		3BD5C6292611B04F00BC2900 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C6282611B04F00BC2900 /* RoundImageView.swift */; };
 		3BD5C62F2611B10100BC2900 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD5C62E2611B10100BC2900 /* Stevia */; };
-		3BD5C6342611B37E00BC2900 /* UserTableViewCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C6332611B37E00BC2900 /* UserTableViewCellConfigurator.swift */; };
 		3BD5C63B2611B3F500BC2900 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C63A2611B3F500BC2900 /* UserManager.swift */; };
 		3BD5C6482611B52800BC2900 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD5C6472611B52800BC2900 /* SDWebImage */; };
 		3BD5C64A2611B52800BC2900 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD5C6492611B52800BC2900 /* SDWebImageMapKit */; };
+		3BD5C6522611B6A000BC2900 /* UserTableViewCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C6512611B6A000BC2900 /* UserTableViewCellConfigurator.swift */; };
+		3BD5C6582611B90900BC2900 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C6572611B90900BC2900 /* UserDataSource.swift */; };
+		3BD5C6612611BEA500BC2900 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C6602611BEA500BC2900 /* UserCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +82,10 @@
 		3BD5C6172611AEAC00BC2900 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3BD5C61D2611AF2E00BC2900 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		3BD5C6282611B04F00BC2900 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
-		3BD5C6332611B37E00BC2900 /* UserTableViewCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCellConfigurator.swift; sourceTree = "<group>"; };
 		3BD5C63A2611B3F500BC2900 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		3BD5C6512611B6A000BC2900 /* UserTableViewCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCellConfigurator.swift; sourceTree = "<group>"; };
+		3BD5C6572611B90900BC2900 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
+		3BD5C6602611BEA500BC2900 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 		3B936ED925DE31BF0080DEB0 /* TestIOS */ = {
 			isa = PBXGroup;
 			children = (
+				3BD5C65F2611BE9500BC2900 /* ViewModels */,
+				3BD5C6562611B8EF00BC2900 /* DataSource */,
 				3B936EEB25DE31C00080DEB0 /* Info.plist */,
 				3B936EDA25DE31BF0080DEB0 /* AppDelegate.swift */,
 				3BD5C5F42611695D00BC2900 /* DataStructure.swift */,
@@ -223,7 +229,7 @@
 		3BD5C6392611B3D900BC2900 /* Configurators */ = {
 			isa = PBXGroup;
 			children = (
-				3BD5C6332611B37E00BC2900 /* UserTableViewCellConfigurator.swift */,
+				3BD5C6512611B6A000BC2900 /* UserTableViewCellConfigurator.swift */,
 			);
 			path = Configurators;
 			sourceTree = "<group>";
@@ -233,6 +239,22 @@
 			children = (
 			);
 			path = UserTests;
+			sourceTree = "<group>";
+		};
+		3BD5C6562611B8EF00BC2900 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3BD5C6572611B90900BC2900 /* UserDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		3BD5C65F2611BE9500BC2900 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3BD5C6602611BEA500BC2900 /* UserCellViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,12 +411,14 @@
 				3B936EDD25DE31BF0080DEB0 /* SceneDelegate.swift in Sources */,
 				3BD5C5F52611695D00BC2900 /* DataStructure.swift in Sources */,
 				3BD5C6292611B04F00BC2900 /* RoundImageView.swift in Sources */,
+				3BD5C6522611B6A000BC2900 /* UserTableViewCellConfigurator.swift in Sources */,
+				3BD5C6582611B90900BC2900 /* UserDataSource.swift in Sources */,
 				3BD5C60526119E0100BC2900 /* ViewControllerTableViewDelegate.swift in Sources */,
 				3BD5C61E2611AF2E00BC2900 /* UserTableViewCell.swift in Sources */,
 				3B936EE525DE31BF0080DEB0 /* TestIOS.xcdatamodeld in Sources */,
 				3BD5C6122611AC6400BC2900 /* ViewControllerViewModel.swift in Sources */,
+				3BD5C6612611BEA500BC2900 /* UserCellViewModel.swift in Sources */,
 				3BD5C6182611AEAC00BC2900 /* User.swift in Sources */,
-				3BD5C6342611B37E00BC2900 /* UserTableViewCellConfigurator.swift in Sources */,
 				3B80E25025E61D5000309FDF /* MathFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

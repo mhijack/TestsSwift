@@ -10,7 +10,7 @@ import Stevia
 
 class RoundImageView: UIView {
 
-    private lazy var imageView: UIImageView = UIImageView()
+    lazy var imageView: UIImageView = UIImageView()
     
     private var borderWidth: CGFloat = 0
     
