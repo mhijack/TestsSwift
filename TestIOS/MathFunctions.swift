@@ -7,6 +7,14 @@
 
 import Foundation
 
-func addition(_ a: Int, _ b: Int) -> Int {
-    return a + b
+class MathFunctions {
+    
+    func addition(_ a: Int, _ b: Int) -> Int {
+        return a + b
+    }
+    
+    func subtraction(_ a: Int, _ b: Int) -> Int {
+        return a - b
+    }
+    
 }
