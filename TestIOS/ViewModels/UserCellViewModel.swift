@@ -11,6 +11,9 @@ class UserCellViewModel: NSObject {
     
     var user: User
     
+    var avatarTappedHandler: ((String) -> ())?
+    var followToggleSuccessHandler: (())
+    
     init(user: User) {
         self.user = user
         super.init()

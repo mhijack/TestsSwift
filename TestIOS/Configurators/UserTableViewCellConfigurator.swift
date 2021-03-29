@@ -11,11 +11,11 @@ import SDWebImage
 
 class UserTableViewCellConfigurator: NSObject {
     
-    private let userManager: UserManager
-    
-    init(userManager: UserManager) {
-        self.userManager = userManager
-    }
+//    private let userManager: UserManager
+//
+//    init(userManager: UserManager) {
+//        self.userManager = userManager
+//    }
     
     public func configure(cell: UserTableViewCell, forDisplaying user: UserCellViewModel) {
         cell.avatar.sd_setImage(with: user.user.avatar, completed: nil)
@@ -23,7 +23,7 @@ class UserTableViewCellConfigurator: NSObject {
         
         cell.avatarTapClosure = { [weak self] in
             guard let self = self else { return }
-//            self.userManager.addUserAsFriend()
+            user.avatarTappedHandler(user.user.name)
         }
     }
     

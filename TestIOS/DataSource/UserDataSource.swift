@@ -9,7 +9,7 @@ import UIKit
 
 class UserDataSource: NSObject, UITableViewDataSource {
     
-    var users: [UserCellViewModel]
+    var users: [UserCellViewModel] = []
     private let reuseIdentifier: String
     private let cellConfigurator: UserTableViewCellConfigurator
     
@@ -20,12 +20,18 @@ class UserDataSource: NSObject, UITableViewDataSource {
     init(users: [User] = [User(id: "0", name: "Jack"),
                           User(id: "1", name: "Melody")],
          cellConfigurator: UserTableViewCellConfigurator = UserTableViewCellConfigurator(userManager: UserManager())) {
-        self.users = users.map({ (user) -> UserCellViewModel in
-            return UserCellViewModel(user: user)
-        })
         self.reuseIdentifier = "userCell"
         self.cellConfigurator = cellConfigurator
         super.init()
+        
+        self.users = users.map({ (user) -> UserCellViewModel in
+            let viewModel = UserCellViewModel(user: user)
+            /// Custom actions or handlers can be configured here
+            viewModel.avatarTappedHandler = { [weak self] (name: String) in
+                print("\(name) is tapped")
+            }
+            return viewModel
+        })
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
