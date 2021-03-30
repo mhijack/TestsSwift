@@ -10,8 +10,9 @@ import Foundation
 struct User {
     
     let id: String
-    let name: String
-    let avatar: URL
+    var name: String
+    var avatar: URL
+    var hasFollowed: Bool = false
     
     init(id: String = "",
          name: String = "",
@@ -19,6 +20,14 @@ struct User {
         self.id = id
         self.name = name
         self.avatar = avatar
+    }
+    
+}
+
+extension User: Equatable {
+    
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        return lhs.id == rhs.id && lhs.name == rhs.name
     }
     
 }

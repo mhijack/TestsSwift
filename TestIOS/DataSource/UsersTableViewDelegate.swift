@@ -7,15 +7,15 @@
 
 import UIKit
 
-protocol UserTableViewDelegateDelegate: class {
+protocol UsersTableViewDelegateDelegate: class {
     
     func didSelectRowAt(for tableView: UITableView, at indexPath: IndexPath)
     
 }
 
-class UserTableViewDelegate: NSObject, UITableViewDelegate {
+class UsersTableViewDelegate: NSObject, UITableViewDelegate {
     
-    weak var delegate: UserTableViewDelegateDelegate?
+    weak var delegate: UsersTableViewDelegateDelegate?
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.didSelectRowAt(for: tableView, at: indexPath)

@@ -9,7 +9,7 @@ import UIKit
 import Stevia
 import SDWebImage
 
-class UserTableViewCellConfigurator: NSObject {
+class UsersTableViewCellConfigurator: NSObject {
     
     public func configure(cell: UserTableViewCell, forDisplaying user: UserCellViewModel) {
         cell.avatar.sd_setImage(with: user.user.avatar, completed: nil)

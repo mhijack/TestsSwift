@@ -7,11 +7,11 @@
 
 import UIKit
 
-class UserDataSource: NSObject, UITableViewDataSource {
+class UsersTableViewDataSource: NSObject, UITableViewDataSource {
     
     var users: [UserCellViewModel] = []
     private let reuseIdentifier: String
-    private let cellConfigurator: UserTableViewCellConfigurator
+    private let cellConfigurator: UsersTableViewCellConfigurator
     
     /*
      Feed data source different cell configurator to configure cell with different UI.
@@ -19,7 +19,7 @@ class UserDataSource: NSObject, UITableViewDataSource {
      */
     init(users: [User] = [User(id: "0", name: "Jack"),
                           User(id: "1", name: "Melody")],
-         cellConfigurator: UserTableViewCellConfigurator = UserTableViewCellConfigurator()) {
+         cellConfigurator: UsersTableViewCellConfigurator = UsersTableViewCellConfigurator()) {
         self.reuseIdentifier = "userCell"
         self.cellConfigurator = cellConfigurator
         super.init()

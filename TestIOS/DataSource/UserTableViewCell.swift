@@ -10,7 +10,7 @@ import Stevia
 
 final class UserTableViewCell: UITableViewCell {
     
-    weak var delegate: UserCellViewModelDelegate
+    weak var delegate: UserCellViewModelDelegate?
     
     var viewModel: UserCellViewModel?  {
         didSet {
@@ -44,6 +44,24 @@ final class UserTableViewCell: UITableViewCell {
 
 extension UserTableViewCell: UserCellViewModelDelegate {
     
+    func didToggleFollowUser() {
+        guard let viewModel = viewModel else { return }
+        switch viewModel.user.hasFollowed {
+        case true:
+            print("hasFollowed user: \(true)")
+        case false:
+            print("hasFollowed user: \(false)")
+        }
+    }
     
+    func didToggleLoading() {
+        guard let viewModel = viewModel else { return }
+        switch viewModel.isLoading {
+        case true:
+            print("started user cell loading")
+        case false:
+            print("finished user cell loading")
+        }
+    }
     
 }
