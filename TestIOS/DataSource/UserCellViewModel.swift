@@ -7,7 +7,19 @@
 
 import Foundation
 
+protocol UserCellViewModelDelegate: class {
+    
+    func didToggleFollowUser()
+    
+    func didToggleLoading()
+    
+}
+
 class UserCellViewModel: NSObject {
+    
+    weak var delegate: UserCellViewModelDelegate?
+    
+    var isLoading: Bool = false
     
     var user: User
     
@@ -17,6 +29,10 @@ class UserCellViewModel: NSObject {
     init(user: User) {
         self.user = user
         super.init()
+    }
+    
+    deinit {
+        print("[UserCellViewModel] deinited")
     }
     
 }

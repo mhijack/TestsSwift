@@ -10,6 +10,14 @@ import Stevia
 
 final class UserTableViewCell: UITableViewCell {
     
+    weak var delegate: UserCellViewModelDelegate
+    
+    var viewModel: UserCellViewModel?  {
+        didSet {
+            viewModel?.delegate = self
+        }
+    }
+    
     var avatar: UIImageView = UIImageView()
     var nameLabel: UILabel = UILabel()
     
@@ -31,5 +39,11 @@ final class UserTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+}
 
+extension UserTableViewCell: UserCellViewModelDelegate {
+    
+    
+    
 }

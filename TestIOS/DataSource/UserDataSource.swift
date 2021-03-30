@@ -19,7 +19,7 @@ class UserDataSource: NSObject, UITableViewDataSource {
      */
     init(users: [User] = [User(id: "0", name: "Jack"),
                           User(id: "1", name: "Melody")],
-         cellConfigurator: UserTableViewCellConfigurator = UserTableViewCellConfigurator(userManager: UserManager())) {
+         cellConfigurator: UserTableViewCellConfigurator = UserTableViewCellConfigurator()) {
         self.reuseIdentifier = "userCell"
         self.cellConfigurator = cellConfigurator
         super.init()
