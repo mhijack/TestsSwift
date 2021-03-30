@@ -16,6 +16,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        let user = User(id: "0", name: "Jack")
+        if let dataUser = try? JSONEncoder().encode(user) {
+            debugPrint(String(data: dataUser, encoding: .utf8))
+        }
     }
 
 

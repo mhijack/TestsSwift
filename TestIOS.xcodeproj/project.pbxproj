@@ -24,6 +24,7 @@
 		3BA54FEC2612E31B00C5F797 /* UsersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA54FEB2612E31B00C5F797 /* UsersViewModelTests.swift */; };
 		3BA54FF12612E3DC00C5F797 /* UserCellConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA54FF02612E3DC00C5F797 /* UserCellConfiguratorTests.swift */; };
 		3BA54FF62612E59700C5F797 /* UsersDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA54FF52612E59700C5F797 /* UsersDataSourceTests.swift */; };
+		3BA54FFB261308CE00C5F797 /* DebouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA54FFA261308CE00C5F797 /* DebouncerTests.swift */; };
 		3BD5C5EA26115F8000BC2900 /* MathFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C5E926115F8000BC2900 /* MathFunctionTests.swift */; };
 		3BD5C5F52611695D00BC2900 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C5F42611695D00BC2900 /* DataStructure.swift */; };
 		3BD5C5FA2611696C00BC2900 /* DataStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C5F92611696C00BC2900 /* DataStructureTests.swift */; };
@@ -84,6 +85,7 @@
 		3BA54FEB2612E31B00C5F797 /* UsersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModelTests.swift; sourceTree = "<group>"; };
 		3BA54FF02612E3DC00C5F797 /* UserCellConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellConfiguratorTests.swift; sourceTree = "<group>"; };
 		3BA54FF52612E59700C5F797 /* UsersDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataSourceTests.swift; sourceTree = "<group>"; };
+		3BA54FFA261308CE00C5F797 /* DebouncerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncerTests.swift; sourceTree = "<group>"; };
 		3BD5C5E926115F8000BC2900 /* MathFunctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFunctionTests.swift; sourceTree = "<group>"; };
 		3BD5C5F42611695D00BC2900 /* DataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
 		3BD5C5F92611696C00BC2900 /* DataStructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructureTests.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				3BA54FEB2612E31B00C5F797 /* UsersViewModelTests.swift */,
 				3BA54FF02612E3DC00C5F797 /* UserCellConfiguratorTests.swift */,
 				3BA54FF52612E59700C5F797 /* UsersDataSourceTests.swift */,
+				3BA54FFA261308CE00C5F797 /* DebouncerTests.swift */,
 			);
 			path = UserTests;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				3B80E23E25E61D3600309FDF /* TestIOSTests.swift in Sources */,
 				3BD5C60A26119ED900BC2900 /* ViewControllerDataSourceTests.swift in Sources */,
 				3BA54FF12612E3DC00C5F797 /* UserCellConfiguratorTests.swift in Sources */,
+				3BA54FFB261308CE00C5F797 /* DebouncerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
