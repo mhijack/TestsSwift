@@ -37,7 +37,8 @@ class UsersDataSourceTests: XCTestCase {
     func testDataSourceInitializesWithProvidedUsers() {
         let tim = User(id: "2", name: "Tim")
         let sam = User(id: "3", name: "Sam")
-        dataSource = UsersTableViewDataSource(users: [tim, sam])
+        let users = [tim, sam]
+        dataSource = UsersTableViewDataSource(users: users)
         XCTAssertEqual(dataSource.users[0].user.id, tim.id)
         XCTAssertEqual(dataSource.users[0].user.name, tim.name)
         XCTAssertEqual(dataSource.users[1].user.id, sam.id)

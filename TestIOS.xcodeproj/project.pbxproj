@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B80E22125E61CC200309FDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936EDE25DE31BF0080DEB0 /* ViewController.swift */; };
 		3B80E23E25E61D3600309FDF /* TestIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936EF425DE31C00080DEB0 /* TestIOSTests.swift */; };
 		3B80E25025E61D5000309FDF /* MathFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936F1025DE31EF0080DEB0 /* MathFunctions.swift */; };
 		3B80E27D25E61F6700309FDF /* TestIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B80E27C25E61F6700309FDF /* TestIOSUITests.swift */; };
+		3B84C599261426AC0010A1EE /* BowlingPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84C598261426AC0010A1EE /* BowlingPlayerTests.swift */; };
+		3B84C59E2614346C0010A1EE /* BowlingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84C59D2614346C0010A1EE /* BowlingPlayer.swift */; };
 		3B936EDB25DE31BF0080DEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936EDA25DE31BF0080DEB0 /* AppDelegate.swift */; };
 		3B936EDD25DE31BF0080DEB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936EDC25DE31BF0080DEB0 /* SceneDelegate.swift */; };
 		3B936EDF25DE31BF0080DEB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936EDE25DE31BF0080DEB0 /* ViewController.swift */; };
@@ -25,6 +26,8 @@
 		3BA54FF12612E3DC00C5F797 /* UserCellConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA54FF02612E3DC00C5F797 /* UserCellConfiguratorTests.swift */; };
 		3BA54FF62612E59700C5F797 /* UsersDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA54FF52612E59700C5F797 /* UsersDataSourceTests.swift */; };
 		3BA54FFB261308CE00C5F797 /* DebouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA54FFA261308CE00C5F797 /* DebouncerTests.swift */; };
+		3BA5500A26141E5500C5F797 /* BowlingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5500926141E5500C5F797 /* BowlingGameTests.swift */; };
+		3BA5501226141EA800C5F797 /* BowlingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5501126141EA800C5F797 /* BowlingGame.swift */; };
 		3BD5C5EA26115F8000BC2900 /* MathFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C5E926115F8000BC2900 /* MathFunctionTests.swift */; };
 		3BD5C5F52611695D00BC2900 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C5F42611695D00BC2900 /* DataStructure.swift */; };
 		3BD5C5FA2611696C00BC2900 /* DataStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5C5F92611696C00BC2900 /* DataStructureTests.swift */; };
@@ -65,6 +68,8 @@
 		3B80E27A25E61F6700309FDF /* TestIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B80E27C25E61F6700309FDF /* TestIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIOSUITests.swift; sourceTree = "<group>"; };
 		3B80E27E25E61F6700309FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B84C598261426AC0010A1EE /* BowlingPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingPlayerTests.swift; sourceTree = "<group>"; };
+		3B84C59D2614346C0010A1EE /* BowlingPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingPlayer.swift; sourceTree = "<group>"; };
 		3B936ED725DE31BF0080DEB0 /* TestIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B936EDA25DE31BF0080DEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B936EDC25DE31BF0080DEB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +91,8 @@
 		3BA54FF02612E3DC00C5F797 /* UserCellConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellConfiguratorTests.swift; sourceTree = "<group>"; };
 		3BA54FF52612E59700C5F797 /* UsersDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataSourceTests.swift; sourceTree = "<group>"; };
 		3BA54FFA261308CE00C5F797 /* DebouncerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncerTests.swift; sourceTree = "<group>"; };
+		3BA5500926141E5500C5F797 /* BowlingGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGameTests.swift; sourceTree = "<group>"; };
+		3BA5501126141EA800C5F797 /* BowlingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGame.swift; sourceTree = "<group>"; };
 		3BD5C5E926115F8000BC2900 /* MathFunctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFunctionTests.swift; sourceTree = "<group>"; };
 		3BD5C5F42611695D00BC2900 /* DataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
 		3BD5C5F92611696C00BC2900 /* DataStructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructureTests.swift; sourceTree = "<group>"; };
@@ -163,6 +170,7 @@
 		3B936ED925DE31BF0080DEB0 /* TestIOS */ = {
 			isa = PBXGroup;
 			children = (
+				3BA5500726141E2000C5F797 /* Bowling */,
 				3BD5C65F2611BE9500BC2900 /* ViewModels */,
 				3BD5C6562611B8EF00BC2900 /* DataSource */,
 				3B936EEB25DE31C00080DEB0 /* Info.plist */,
@@ -184,6 +192,7 @@
 		3B936EF325DE31C00080DEB0 /* TestIOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				3BA5500826141E2800C5F797 /* BowlingTests */,
 				3BD5C63F2611B41400BC2900 /* UserTests */,
 				3B936EF625DE31C00080DEB0 /* Info.plist */,
 				3B936EF425DE31C00080DEB0 /* TestIOSTests.swift */,
@@ -200,6 +209,24 @@
 				3B936F2225DE34A80080DEB0 /* XCTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BA5500726141E2000C5F797 /* Bowling */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5501126141EA800C5F797 /* BowlingGame.swift */,
+				3B84C59D2614346C0010A1EE /* BowlingPlayer.swift */,
+			);
+			path = Bowling;
+			sourceTree = "<group>";
+		};
+		3BA5500826141E2800C5F797 /* BowlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5500926141E5500C5F797 /* BowlingGameTests.swift */,
+				3B84C598261426AC0010A1EE /* BowlingPlayerTests.swift */,
+			);
+			path = BowlingTests;
 			sourceTree = "<group>";
 		};
 		3BD5C5FE26119DCF00BC2900 /* ViewController */ = {
@@ -410,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B936EDF25DE31BF0080DEB0 /* ViewController.swift in Sources */,
+				3B84C59E2614346C0010A1EE /* BowlingPlayer.swift in Sources */,
 				3BD5C60026119DE200BC2900 /* ViewControllerDataSource.swift in Sources */,
 				3BA54FE72612E30100C5F797 /* UsersTableViewController.swift in Sources */,
 				3B936EDB25DE31BF0080DEB0 /* AppDelegate.swift in Sources */,
@@ -424,6 +452,7 @@
 				3BD5C61E2611AF2E00BC2900 /* UserTableViewCell.swift in Sources */,
 				3B936EE525DE31BF0080DEB0 /* TestIOS.xcdatamodeld in Sources */,
 				3BD5C6122611AC6400BC2900 /* ViewControllerViewModel.swift in Sources */,
+				3BA5501226141EA800C5F797 /* BowlingGame.swift in Sources */,
 				3BD5C6612611BEA500BC2900 /* UserCellViewModel.swift in Sources */,
 				3BD5C6182611AEAC00BC2900 /* User.swift in Sources */,
 				3B80E25025E61D5000309FDF /* MathFunctions.swift in Sources */,
@@ -439,9 +468,10 @@
 				3BA54FF62612E59700C5F797 /* UsersDataSourceTests.swift in Sources */,
 				3BD5C5EA26115F8000BC2900 /* MathFunctionTests.swift in Sources */,
 				3BD5C5FA2611696C00BC2900 /* DataStructureTests.swift in Sources */,
-				3B80E22125E61CC200309FDF /* ViewController.swift in Sources */,
 				3B80E23E25E61D3600309FDF /* TestIOSTests.swift in Sources */,
+				3BA5500A26141E5500C5F797 /* BowlingGameTests.swift in Sources */,
 				3BD5C60A26119ED900BC2900 /* ViewControllerDataSourceTests.swift in Sources */,
+				3B84C599261426AC0010A1EE /* BowlingPlayerTests.swift in Sources */,
 				3BA54FF12612E3DC00C5F797 /* UserCellConfiguratorTests.swift in Sources */,
 				3BA54FFB261308CE00C5F797 /* DebouncerTests.swift in Sources */,
 			);
