@@ -50,8 +50,8 @@ class BowlingPlayer {
 
 extension BowlingPlayer: Equatable {
     
-    static func == (lhs: Self, rhs: Self) -> Bool {
-        return
+    static func == (lhs: BowlingPlayer, rhs: BowlingPlayer) -> Bool {
+        return lhs.name == rhs.name
     }
     
 }
