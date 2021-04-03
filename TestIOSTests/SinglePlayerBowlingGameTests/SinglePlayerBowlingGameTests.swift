@@ -69,7 +69,7 @@ class SinglePlayerBowlingGameTests: XCTestCase {
         game.roll(5)
         game.roll(5)
         game.roll(3)
-        rollMany(rolls: 0, pins: 14)
+        rollMany(rolls: 14, pins: 0)
         XCTAssertEqual(game.score(), 35)
     }
     
@@ -77,7 +77,7 @@ class SinglePlayerBowlingGameTests: XCTestCase {
         game.roll(10)
         game.roll(3)
         game.roll(5)
-        rollMany(rolls: 0, pins: 18)
+        rollMany(rolls: 18, pins: 0)
         XCTAssertEqual(game.score(), 26)
     }
     
@@ -97,13 +97,43 @@ class SinglePlayerBowlingGameTests: XCTestCase {
         game.roll(10)
         game.roll(4)
         game.roll(4)
-        rollMany(rolls: 0, pins: 16)
+        rollMany(rolls: 15, pins: 0)
         XCTAssertEqual(game.score(), 52)
     }
     
     func testPerfectGame() {
-        rollMany(rolls: 12, pins: 10)
+        for _ in 0..<12 {
+            game.roll(10)
+        }
         XCTAssertEqual(game.score(), 300)
+    }
+    
+    func testHeartBreak() {
+        for _ in 0..<11 {
+            game.roll(10)
+        }
+        game.roll(9)
+        XCTAssertEqual(game.score(), 299)
+    }
+    
+    func testTenthFrameSpare() {
+        for _ in 0..<9 {
+            game.roll(10)
+        }
+        game.roll(9)
+        game.roll(1)
+        game.roll(1)
+        XCTAssertEqual(game.score(), 270)
+    }
+    
+    func testEndOfArray() {
+        for _ in 0..<9 {
+            game.roll(0)
+        }
+        game.roll(2)
+        game.roll(8)
+        game.roll(10)
+        XCTAssertEqual(game.score(), 20)
     }
     
 }

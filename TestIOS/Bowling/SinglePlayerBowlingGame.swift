@@ -9,16 +9,48 @@ import Foundation
 
 class SinglePlayerBowlingGame {
     
-    private var firstThrowInframe: Bool = true
+    private var currentFrame: Int = 0
+    private var ball: Int = 0
+    private var firstThrowInFrame: Bool = true
     
     private var scorer: SinglePlayerBowlingGameScorer = SinglePlayerBowlingGameScorer()
     
     func score() -> Int {
-        return scorer.scoreForFrame()
+        return scorer.scoreForFrame(frameIndex: currentFrame)
     }
     
+    /*
+     0  1  2  3  4  5  6  7  8  9               10
+     2  2  2  2  2  2  2  2  2  2               3 throws
+     */
     func roll(_ pins: Int) {
-        scorer.addThrow(pins)
+        scorer.addThrow(pins, at: ball)
+        ball += 1
+        adjustFrame(pins: pins)
+    }
+    
+}
+
+extension SinglePlayerBowlingGame {
+    
+    private func adjustFrame(pins: Int) {
+        if pins == 10 {
+            advanceFrame()
+        } else {
+            switch firstThrowInFrame {
+            case true:
+                /// First throw and not a strike,
+                firstThrowInFrame = false
+            case false:
+                /// Second throw, firstThrowInFrame = true and advance frame
+                firstThrowInFrame = true
+                advanceFrame()
+            }
+        }
+    }
+    
+    private func advanceFrame() {
+        currentFrame = min(10, currentFrame + 1)
     }
     
 }

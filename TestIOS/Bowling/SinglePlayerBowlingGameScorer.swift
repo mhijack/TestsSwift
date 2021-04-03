@@ -9,30 +9,30 @@ import Foundation
 
 class SinglePlayerBowlingGameScorer {
     
-    private var nextThrowIndex: Int = 0
     private var allThrows: [Int] = Array.init(repeating: 0, count: 21)
+    private var ball: Int = 0
     
     public func scoreForFrame(frameIndex: Int = 10) -> Int {
         var score: Int = 0
-        var currentFrameIndex: Int = 0
+        ball = 0
+        
         for _ in 0..<frameIndex {
-            if isStrike(at: currentFrameIndex) {
-                score += 10 + nextTwoThrows(for: currentFrameIndex)
-                currentFrameIndex += 1
-            } else if isSpare(at: currentFrameIndex) {
-                score += 10 + firstThrowInNextFrameOfCurrent(frame: currentFrameIndex)
-                currentFrameIndex += 2
+            if isStrike(at: ball) {
+                score += 10 + nextTwoThrows(for: ball)
+                ball += 1
+            } else if isSpare(at: ball) {
+                score += 10 + nextThrow(frame: ball)
+                ball += 2
             } else {
-                score += allThrows[currentFrameIndex] + allThrows[currentFrameIndex + 1]
-                currentFrameIndex += 2
+                score += twoThrowsIn(frame: ball)
+                ball += 2
             }
         }
         return score
     }
     
-    public func addThrow(_ pins: Int) {
-        allThrows[nextThrowIndex] = pins
-        nextThrowIndex += 1
+    public func addThrow(_ pins: Int, at ball: Int) {
+        allThrows[ball] = pins
     }
     
 }
@@ -54,8 +54,12 @@ extension SinglePlayerBowlingGameScorer {
         return allThrows[currentFrameIndex + 1] + allThrows[currentFrameIndex + 2]
     }
     
-    private func firstThrowInNextFrameOfCurrent(frame currentFrameIndex: Int) -> Int {
+    private func nextThrow(frame currentFrameIndex: Int) -> Int {
         return allThrows[currentFrameIndex + 2]
+    }
+    
+    private func twoThrowsIn(frame currentFrameIndex: Int) -> Int {
+        return allThrows[currentFrameIndex] + allThrows[currentFrameIndex + 1]
     }
     
 }
