@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B298F6A2619388C006D0E4E /* BalancedBrackets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B298F692619388C006D0E4E /* BalancedBrackets.swift */; };
 		3B80E23E25E61D3600309FDF /* TestIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936EF425DE31C00080DEB0 /* TestIOSTests.swift */; };
 		3B80E25025E61D5000309FDF /* MathFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936F1025DE31EF0080DEB0 /* MathFunctions.swift */; };
 		3B80E27D25E61F6700309FDF /* TestIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B80E27C25E61F6700309FDF /* TestIOSUITests.swift */; };
@@ -15,6 +16,7 @@
 		3B85DECE261582DC00D0DA06 /* SinglePlayerBowlingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B85DECD261582DC00D0DA06 /* SinglePlayerBowlingGame.swift */; };
 		3B85DED3261582EF00D0DA06 /* SinglePlayerBowlingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B85DED2261582EF00D0DA06 /* SinglePlayerBowlingGameTests.swift */; };
 		3B85DED82619252400D0DA06 /* SinglePlayerBowlingGameScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B85DED72619252400D0DA06 /* SinglePlayerBowlingGameScorer.swift */; };
+		3B85DEE2261937FE00D0DA06 /* BalancedBracketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B85DEE1261937FE00D0DA06 /* BalancedBracketsTests.swift */; };
 		3B936EDB25DE31BF0080DEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936EDA25DE31BF0080DEB0 /* AppDelegate.swift */; };
 		3B936EDD25DE31BF0080DEB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936EDC25DE31BF0080DEB0 /* SceneDelegate.swift */; };
 		3B936EDF25DE31BF0080DEB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B936EDE25DE31BF0080DEB0 /* ViewController.swift */; };
@@ -68,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B298F692619388C006D0E4E /* BalancedBrackets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancedBrackets.swift; sourceTree = "<group>"; };
 		3B80E27A25E61F6700309FDF /* TestIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B80E27C25E61F6700309FDF /* TestIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIOSUITests.swift; sourceTree = "<group>"; };
 		3B80E27E25E61F6700309FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 		3B85DECD261582DC00D0DA06 /* SinglePlayerBowlingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerBowlingGame.swift; sourceTree = "<group>"; };
 		3B85DED2261582EF00D0DA06 /* SinglePlayerBowlingGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerBowlingGameTests.swift; sourceTree = "<group>"; };
 		3B85DED72619252400D0DA06 /* SinglePlayerBowlingGameScorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerBowlingGameScorer.swift; sourceTree = "<group>"; };
+		3B85DEE1261937FE00D0DA06 /* BalancedBracketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancedBracketsTests.swift; sourceTree = "<group>"; };
 		3B936ED725DE31BF0080DEB0 /* TestIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B936EDA25DE31BF0080DEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B936EDC25DE31BF0080DEB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +164,22 @@
 			path = SinglePlayerBowlingGameTests;
 			sourceTree = "<group>";
 		};
+		3B85DEDF261937CD00D0DA06 /* BalancedBracketsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B298F692619388C006D0E4E /* BalancedBrackets.swift */,
+			);
+			path = BalancedBracketsTests;
+			sourceTree = "<group>";
+		};
+		3B85DEE0261937DC00D0DA06 /* BalancedBracketsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B85DEE1261937FE00D0DA06 /* BalancedBracketsTests.swift */,
+			);
+			path = BalancedBracketsTests;
+			sourceTree = "<group>";
+		};
 		3B936ECE25DE31BF0080DEB0 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +204,7 @@
 		3B936ED925DE31BF0080DEB0 /* TestIOS */ = {
 			isa = PBXGroup;
 			children = (
+				3B85DEDF261937CD00D0DA06 /* BalancedBracketsTests */,
 				3BA5500726141E2000C5F797 /* Bowling */,
 				3BD5C65F2611BE9500BC2900 /* ViewModels */,
 				3BD5C6562611B8EF00BC2900 /* DataSource */,
@@ -206,6 +227,7 @@
 		3B936EF325DE31C00080DEB0 /* TestIOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				3B85DEE0261937DC00D0DA06 /* BalancedBracketsTests */,
 				3B85DECC261582BC00D0DA06 /* SinglePlayerBowlingGameTests */,
 				3BA5500826141E2800C5F797 /* BowlingTests */,
 				3BD5C63F2611B41400BC2900 /* UserTests */,
@@ -467,6 +489,7 @@
 				3B85DED82619252400D0DA06 /* SinglePlayerBowlingGameScorer.swift in Sources */,
 				3BD5C6582611B90900BC2900 /* UsersTableViewDataSource.swift in Sources */,
 				3BD5C66C2612C5DD00BC2900 /* UsersTableViewDelegate.swift in Sources */,
+				3B298F6A2619388C006D0E4E /* BalancedBrackets.swift in Sources */,
 				3BD5C60526119E0100BC2900 /* ViewControllerTableViewDelegate.swift in Sources */,
 				3BD5C61E2611AF2E00BC2900 /* UserTableViewCell.swift in Sources */,
 				3B936EE525DE31BF0080DEB0 /* TestIOS.xcdatamodeld in Sources */,
@@ -490,6 +513,7 @@
 				3BD5C5FA2611696C00BC2900 /* DataStructureTests.swift in Sources */,
 				3B80E23E25E61D3600309FDF /* TestIOSTests.swift in Sources */,
 				3BA5500A26141E5500C5F797 /* BowlingGameTests.swift in Sources */,
+				3B85DEE2261937FE00D0DA06 /* BalancedBracketsTests.swift in Sources */,
 				3BD5C60A26119ED900BC2900 /* ViewControllerDataSourceTests.swift in Sources */,
 				3B84C599261426AC0010A1EE /* BowlingPlayerTests.swift in Sources */,
 				3BA54FF12612E3DC00C5F797 /* UserCellConfiguratorTests.swift in Sources */,
