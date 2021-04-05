@@ -7,6 +7,10 @@
 
 import Foundation
 
+class GameError: Error {
+    
+}
+
 class SinglePlayerBowlingGame {
     
     private var currentFrame: Int = 0
@@ -27,6 +31,20 @@ class SinglePlayerBowlingGame {
         scorer.addThrow(pins, at: ball)
         ball += 1
         adjustFrame(pins: pins)
+    }
+    
+    enum SingleGameError: Error {
+        case invalidSelection
+        case insufficientFunds(coinsNeeded: Int)
+        case outOfStock
+    }
+    
+    public func throwException() throws {
+        throw SingleGameError.invalidSelection
+    }
+    
+    public func throwInsufficientFunds() throws {
+        throw SingleGameError.insufficientFunds(coinsNeeded: 10)
     }
     
 }

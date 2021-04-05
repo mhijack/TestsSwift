@@ -136,6 +136,24 @@ class SinglePlayerBowlingGameTests: XCTestCase {
         XCTAssertEqual(game.score(), 20)
     }
     
+    func testThrowException() {
+        XCTAssertNoThrow(try game.throwException())
+    }
+    
+    func testThrowInsufficientFunds() {
+        do {
+            try game.throwInsufficientFunds()
+        } catch SinglePlayerBowlingGame.SingleGameError.invalidSelection {
+            
+        } catch SinglePlayerBowlingGame.SingleGameError.insufficientFunds(let coinsNeeded) {
+            print(coinsNeeded)
+        } catch SinglePlayerBowlingGame.SingleGameError.outOfStock {
+            
+        } catch {
+            
+        }
+    }
+    
 }
 
 extension SinglePlayerBowlingGameTests {
